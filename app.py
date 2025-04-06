@@ -1,9 +1,10 @@
 from flask import Flask
-application = Flask(__name__)
 
-@application.route('/')
-def hello():
+app = Flask(__name__)
+
+@app.route("/")
+def home():
     return "Hello 12226073!"
 
 if __name__ == "__main__":
-    application.run()
+    app.run()
